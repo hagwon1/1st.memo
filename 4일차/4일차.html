@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box01 {
+        width: 150px;
+        height: 100px;
+        border: 1px solid black;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+      }
+      .box02 {
+        width: 150px;
+        height: 100px;
+        border: 1px solid red;
+      }
+      .padding-box {
+        width: 130px;
+        height: 80px;
+        border: 1px solid red;
+      }
+      h2 {
+        border: 1px solid black;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      /*
+      CSS 선택자
+      CSS 선택자는 특정요소애 스타일을 적용하는 방법.
+      1. 자식 선택자 : ">" 기호를 사용하여 특정 요소의 자식요소만 스타일 적용.
+      2. 하위 선택자 : 공백(space)을 사용하여 특정 요소의 모든 하위요소에 스타일 적용.
+      */
+      .a > p {
+        color: red;
+      }
+      .b p {
+        color: red;
+      }
+      .relative-box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        position: relative;
+      }
+      /*
+      absoulte는 부모가 relative일 때 relative를 기준으로 움직일 수 있다.
+      (실무에선 팜업창 닫기버튼, 확인버튼 만들기용으로 사용)
+      */
+      .absoulte-box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    margin은 기본적으로 세로로 배치됨
+    margin은 border(테두리)를 기준으로 이웃으로 하는 요소 사이의 간격을 설정함.
+    margin은 좌우로 auto를 하게 되면 모니터 크기에 상관 없이 중앙에 배치 가능.
+    margin auto는 좌우만 적용.(상하로는 적용 X)
+    -->
+    <div class="box01">
+      <!--
+        padding은 테두리와 내용 사이의 간격을 조절할 꺠 사용.
+        padding은 부모태그에서 설정해야함.
+        padding은 auto가 없음.
+        -->
+      <div class="padding-box"></div>
+    </div>
+    <div class="box02"></div>
+
+    <h2>안녕하세요, 저는 금요일에도 수업을 듣는 열정남입니다!</h2>
+    <div class="a">
+      <p>안녕하세요, 롯데리아입니다.</p>
+    </div>
+    <div class="b">
+      <div>
+        <p>안녕하세요, 버거킹입니다.</p>
+      </div>
+    </div>
+    <h2>position</h2>
+    <div class="relative-box">
+      <div class="absoulte-box"></div>
+    </div>
+  </body>
+</html>
