@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        /*
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-bottom: auto; 
+            */
+
+        margin: 20px auto;
+        /* 왼쪽의 20px은 상하를 의미하고, 오른쪽 auto는 좌우를 의미한다*/
+
+        width: 500px;
+        height: 800px;
+        background-color: #ececec;
+        padding: 20px;
+        /*padding: 20px; -> 상하좌우로 20px씩 간격을 두겠다*/
+      }
+      .content01 {
+        width: 450px;
+        height: 250px;
+        background-color: darkgreen;
+        border: 1px solid;
+        margin-bottom: 250px;
+      }
+      .content02 {
+        width: 450px;
+        height: 250px;
+        background-color: darkgreen;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- padding & margin 복습 -->
+    <!--
+        margin은 좌우 간격을 auto로 맞출 수 있음
+        auto를 하게 되면 위치를 화면 중앙으로 배치 가능.
+        padding은 불가능하다.
+
+        margin: 1px; -> 상하좌우로 margin 1px씩 설정
+        margin: 1px 2px; -> 상하로 1px, 좌우로 2px씩 margin 설정
+        margin: 1px 2px 3px; -> 위로 1px, 아래로 2px, 좌우로 3px씩 margin 설정
+        margin: 1px 2px 3px 4px; -> 위로 1px, 아래로 2px, 좌로 3px, 우로 4px씩 margin 설정
+
+        padding: 1px; -> 상하좌우로 1px씩 padding 설정
+        padding: 1px 2px; -> 상하로 1px, 좌우로 2px씩 padding 설정
+        padding: 1px 2px 3px; -> 위로 1px, 아래로 2px, 좌우로 3px씩 padding 설정
+        padding: 1px 2px 3px 4px; -> 위로 1px, 아래로 2px, 좌로 3px, 우로 4px씩 padding 설정
+     -->
+    <div class="container">
+      div.container
+      <div class="content01">div.content01</div>
+      <div class="content02">div.content02</div>
+    </div>
+  </body>
+</html>

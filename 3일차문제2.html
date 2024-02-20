@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 600px;
+            height: 300px;
+            border: 5px solid;
+            margin: 50px auto;
+            position: relative;
+        }
+        /*
+        컨테이너 안에 있는div
+        box01과 box02는 컨테이너의 자식 태그이다.
+        부모태그가 relative이거 자식 태그가 absolute여야함
+        */
+        .container > div{
+            width: 200px;
+            height: 100px;
+            border: 1px solid red;
+            position: absolute;
+        }
+        .box01{
+            top: 0px;
+            right: 0px;
+        }
+        .box02{
+            bottom: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box01">
+            <img src="KakaoTalk_20240215_201403502.gif" alt="">
+        </div>
+        <div class="box02">
+            <img src="KakaoTalk_20240215_201405102.gif" alt="">
+        </div>
+    </div>
+</body>
+</html>

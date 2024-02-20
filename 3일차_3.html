@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 200px;
+            background-color: dodgerblue;
+            display: flex;
+            /*flex = flexible, 유연한 이라는 뜻*/
+            justify-content: space-between;
+            /*
+            justify : 가로축을 의미
+
+            */
+        }
+        .container > div{
+            background-color: #f1f1f1;
+            width: 150px;
+            /*
+            inline-block 은 실무에서 사용 X
+            margin: 10px;
+            */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Flex, 사용률 높음
+    
+    flex는 복잡한 레이아웃을 간편하게 만들 수 있도록 도와준다. (인스타, 페이스북, 유튜브 등)
+    크기와 위치를 동적으로 조절가능하다. ( 즉, 핸드폰 사이즈던 모니터 사이즈던 자동으로 늘어나고 줄어든다)
+    이를 통해 다양한 디바이스(휴대전화, 모니터 등)와 화면크기에 맞춰 레이아웃을 만들 수 있다.
+    -->
+
+    <div class="container">
+        <!--div은 기본 세로로 배치됨-->
+        <div>1
+            <img src="KakaoTalk_20240215_201403502.gif" alt="">
+        </div>
+        <div>2
+            <img src="KakaoTalk_20240215_201405102.gif" alt="">
+        </div>
+        <div>3
+            <img src="KakaoTalk_20240215_203201767.gif" alt="">
+        </div>
+        <div>4
+            <img src="KakaoTalk_20240215_203206849.gif" alt=""> 
+        </div>
+    </div>
+</body>
+</html>

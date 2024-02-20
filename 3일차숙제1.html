@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+        width: 1000px;
+        margin: 120px auto;
+        background-color: gray;
+        position: relative;
+      }
+      .container > div {
+        flex: 1;
+        width: 320px;
+        height: 350px;
+        color: white;
+      }
+      .card:nth-child(1) {
+        background-color: #283491;
+      }
+      .card:nth-child(2) {
+        background-color: #f18684;
+      }
+      .card:nth-child(3) {
+        background-color: #6ee2f1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      div.container
+      <div class="card">div.card</div>
+      <div class="card">div.card</div>
+      <div class="card">div.card</div>
+    </div>
+  </body>
+</html>
