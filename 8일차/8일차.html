@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 10vh;
+        background-color: #24252a;
+
+        display: flex;
+        justify-content: space-between;
+      }
+      .item {
+        border: 1px solid black;
+        margin: auto;
+        flex: 0 0 20vw;
+        text-align: center;
+      }
+      .item:nth-child(1) {
+        background-color: white;
+        height: 60%;
+      }
+      .item:nth-child(2) {
+        height: 30%;
+        background-color: #24252a;
+        display: flex;
+      }
+      .item:nth-child(3) {
+        height: 40%;
+      }
+      .inner-item {
+        border: 1px solid red;
+        flex: 1;
+        text-align: center;
+        font-size: 13px;
+        color: white;
+      }
+      .inner-item:nth-child(1) {
+        background-color: #24252a;
+      }
+      .inner-item:nth-child(2) {
+        background-color: #24252a;
+      }
+      .inner-item:nth-child(3) {
+        background-color: #24252a;
+      }
+      .button {
+        border-radius: 50px;
+        border: none;
+        color: darkturquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">로고 영역</div>
+      <div class="item">
+        <div class="inner-item">Service</div>
+        <div class="inner-item">Project</div>
+        <div class="inner-item">About</div>
+      </div>
+      <div class="item"><button>contact</button></div>
+    </div>
+  </body>
+</html>

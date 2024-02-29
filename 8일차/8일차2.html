@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: #24252a;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .logo {
+        padding: 9px 15px;
+        font-size: 30px;
+        background-color: #ececec;
+        border: 1px solid red;
+      }
+      ul {
+        display: flex;
+      }
+      ul li {
+        list-style: none;
+        border: 1px solid red;
+        padding: 10px 20px;
+      }
+      a {
+        /* a태그는 기본적으로 밑줄이 있으므로 없애줘야함 */
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+      }
+      .item button {
+        padding: 9px 15px;
+        background-color: rgba(0, 136, 169, 1);
+        /* button태그는 기본적으로 border가 있으므로 아래의 태그로 선을 없앰 */
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <div class="logo">로고 영역</div>
+      </div>
+      <div class="item">
+        <ul>
+          <li><a href="">Service</a></li>
+          <li><a href="">Project</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <button>content</button>
+      </div>
+    </div>
+  </body>
+</html>
